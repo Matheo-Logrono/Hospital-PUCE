@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imgs/logo.jpg">
+    <title>Historial Clínico</title>
+</head>
+
+<body>
+
+    <h1 style="text-align: center; color: rgb(0, 195, 255);">Historial Clínico</h1>
+
+    <hr>
+
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="https://www.hospitalmetropolitano.org/" target="_blank">Página Oficial</a>
+    </nav>
+
+    <p>
+        Complete el siguiente formulario con la información
+        del paciente.
+    </p>
+
+    <!-- Formulario -->
+
+    <form action="#">
+
+        <label for="Nombre">Nombre del paciente:</label>
+        <br>
+        <input type="text" id="Nombre" placeholder="Nombre completo" required>
+
+        <br><br>
+
+        <label for="ci">C.I del paciente: </label>
+        <br>
+        <input type="text" id="ci" inputmode="numeric" placeholder="C.I" minlength="10" maxlength="10" required>
+
+        <br><br>
+
+        <label for="celular">Número celular del paciente:</label>
+        <br>
+        <input type="tel" id="celular" placeholder="Número Celular" required>
+
+        <br><br>
+
+        <label for="fecha">Fecha de nacimiento del paciente:</label>
+        <br>
+        <input type="date" id="fecha" required>
+
+        <br><br>
+
+        <label for="email">Email del paciente:</label>
+        <br>
+        <input type="email" id="email" placeholder="Email" required>
+
+        <br><br>
+
+        <label for="#">Género del paciente:</label>
+        <br>
+
+        <label for="">
+            <input type="radio" id="Masculino" name="genero">
+            Masculino
+        </label>
+
+        <label for="">
+            <input type="radio" id="Femenino" name="genero">
+            Femenino
+        </label>
+
+        <label for="">
+            <input type="radio" id="Otro" name="genero">
+            Otro
+        </label>
+
+        <br><br>
+
+        <label for="sector">Sector de residencia:</label>
+        <br>
+
+        <select name="sector" id="sector">
+
+            <option value="opcion" disabled selected>
+                Seleccionar Opción
+            </option>
+
+            <option value="norte">Norte</option>
+            <option value="centro">Centro</option>
+            <option value="sur">Sur</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="tipo_sangre">Ingrese el tipo de sangre:</label>
+        <br>
+
+        <input type="text" id="tipo_sangre">
+
+        <br><br>
+
+        <label for="antecedentes">
+            Antecedentes médicos:
+        </label>
+        <br>
+
+        <textarea name="antecedentes" id="antecedentes" cols="30" rows="5"
+            placeholder="Escriba antecedentes médicos, alergias o información importante">
+        </textarea>
+
+        <br><br>
+
+        <label for="consulta">
+            Motivo de la consulta:
+        </label>
+        <br>
+
+        <textarea name="consulta" id="consulta" cols="30" rows="5"
+            placeholder="Escriba el motivo por el cual el paciente asistió a consulta médica">
+        </textarea>
+
+        <br><br>
+
+        <input type="submit" value="Guardar Historial">
+
+        <button type="reset">Limpiar</button>
+
+    </form>
+
+    <hr>
+
+    <button><a href="../index.html">Volver al inicio</a></button>
+
+</body>
+
+</html>
