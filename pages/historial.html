@@ -28,9 +28,21 @@
 
     <form action="#">
 
-        <label for="Nombre">Nombre del paciente:</label>
+        <label for="Nombre">Nombres del paciente:</label>
         <br>
-        <input type="text" id="Nombre" placeholder="Nombre completo" required>
+        <input type="text" id="Nombre" placeholder="Nombres" required>
+
+        <br><br>
+
+        <label for="Apellido">Apellidos del paciente:</label>
+        <br>
+        <input type="text" id="Apellido" placeholder="Apellidos" required>
+
+        <br><br>
+
+        <label for="Edad">Edad del paciente:</label>
+        <br>
+        <input type="number" id="Edad" placeholder="Edad" required>
 
         <br><br>
 
@@ -108,8 +120,49 @@
         <br>
 
         <textarea name="antecedentes" id="antecedentes" cols="30" rows="5"
-            placeholder="Escriba antecedentes médicos, alergias o información importante">
+            placeholder="Escriba antecedentes médicos o información importante">
         </textarea>
+
+        <br><br>
+
+        <label for="alergias">
+            Anlergias:
+        </label>
+        <br>
+
+        <textarea name="alergias" id="alergias" cols="20" rows="5"
+            placeholder="Escriba las alergias que tenga el paciente">
+        </textarea>
+
+        <br><br>
+
+        <label for="medicamentos">
+            Medicamentos que usa:
+        </label>
+        <br>
+
+        <textarea name="medicamentos" id="medicamentos" cols="20" rows="5"
+            placeholder="Escriba los medicamentos que actualmente usa el paciente">
+        </textarea>
+
+        <br><br>
+
+        <label for="especialidad">Especialidad:</label>
+        <br>
+
+        <select name="especialidad" id="especialidad">
+
+            <option value="opcion" disabled selected>
+                Seleccionar Opción
+            </option>
+
+            <option value="medicina_general">Medicina general</option>
+            <option value="emergencias">Emergencias</option>
+            <option value="cardiología">Cardiología</option>
+            <option value="laboratorio">Laboratorio clínico</option>
+            <option value="imagenes_medicas">Rayos X e imágenes médicas</option>
+
+        </select>
 
         <br><br>
 
